@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <title>FUTURE COMPANY NAME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/bringmethecode/mercury/master/br1/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.1.1.slim.js" integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA=" crossorigin="anonymous"></script>
+  </head>
+  
+<body>
+  <div class="container card">
+    <h1>INTELLISYS OFICINAS</h1><br>
+    <H2>CONTROLES ON/OFF</H2>
+    <div class="row">
+        <div class="col-md-2 col-xs-6 col-sm-4">
+          <a class="btn c1" id="butt1"><i class="material-icons amber800">lightbulb_outline</i><div class="of">OFF</div><div class="on">ON</div></a>    
+          <!-- ESTADO ON <a href=\"/?button2on\"\"><button type="button" class="btn c1.active btn-default"><i class="material-icons orange300">lightbulb_outline</i>ON</button></a>  -->
+        </div>
+        <div class="col-md-2 col-xs-6 col-sm-4">
+          <a class="btn c1" id="butt2"><i class="material-icons amber800">lightbulb_outline</i><div class="of">OFF</div><div class="on">ON</div></a>
+        </div>
+        <div class="col-md-2 col-xs-6 col-sm-4">
+          <a class="btn c1" id="butt3"><i class="material-icons amber800">lightbulb_outline</i><div class="of">OFF</div><div class="of">OFF</div></button></a></button></a><br>
+        </div>
+        <div class="col-md-2 col-xs-6 col-sm-4">
+          <a href=\"/?button5on\"\><button type="button" class="btn c1"><i class="material-icons amber800">lightbulb_outline</i><div class="of">OFF</div></button></a><br>
+        </div>
+        <div class="col-md-2 col-xs-6 col-sm-4">
+          <a href=\"/?button6on\"\><button type="button" class="btn c1"><i class="material-icons amber800">lightbulb_outline</i><div class="of">OFF</div></button></a><br>
+        </div>
+        <div class="col-md-2 col-xs-6 col-sm-4">
+          <a href=\"/?button2off\"\><button type="button" class="btn c1"><i class="material-icons amber800">lightbulb_outline</i><div class="of">OFF</div></button></a><br>
+        </div>        
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-xs-6 col-sm-4">
+          <a href=\"/?button3off\"\><button type="button" class="btn c1 btn-default"><i class="material-icons amber800">lightbulb_outline</i><div class="of">OFF</div></button></a><br>
+      </div>
+      <div class="col-md-2 col-xs-6 col-sm-4">
+          <a href=\"/?button4off\"\><button type="button" class="btn c1 btn-default"><i class="material-icons amber800">lightbulb_outline</i><div class="of">OFF</div></button></a><br>
+      </div>
+      <div class="col-md-2 col-xs-6 col-sm-4">
+          <a href=\"/?button5off\"\><button type="button" class="btn c1 btn-default"><i class="material-icons amber800">lightbulb_outline</i><div class="of">OFF</div></button></a><br>
+      </div>
+      <div class="col-md-2 col-xs-6 col-sm-4">
+          <a href=\"/?button6off\"\><button type="button" class="btn c3 btn-default"><i class="material-icons greenA700">restaurant</i><div class="of">OFF</div></button></a><br>
+      </div>
+      <div class="col-md-2 col-xs-6 col-sm-4">
+          <a href=\"/?button7off\"\><button type="button" class="btn c4 btn-default"><i class="material-icons blue700">toys</i><div class="of">OFF</div></button></a><br>
+      </div>
+      <div class="col-md-2 col-xs-6 col-sm-4">
+          <a href=\"/?button8off\"\><button type="button" class="btn c5 btn-default"><i class="material-icons red700">weekend</i><div class="of">OFF</div></button></a><br>
+      </div>
+    </div>
+    </div>
+
+    <script>
+  $(".btn").click(function() {
+  $(this).toggleClass("active");
+  });
+    </script>
+
+    <script>
+function a(el){
+  location.href = "button1on";
+}
+function b(el){
+  location.href = "button1off";
+}
+function c(el){
+  location.href = "button2on";
+}
+function d(el){
+  location.href = "button2off";
+}
+function e(el){
+  location.href = "button3on";
+}
+function f(el){
+  location.href = "button3off";
+}
+
+$("#butt1").click(function() {
+  var el = this;
+  return (el.t = !el.t) ? a(el) : b(el);
+});
+          
+$("#butt2").click(function() {
+  var el = this;
+  return (el.t = !el.t) ? c(el) : d(el);
+});
+        
+$("#butt3").click(function() {
+  var el = this;
+  return (el.t = !el.t) ? e(el) : f(el);
+});
+          
+
+    </script>
+
+    <div class="footer col-md-4 col-md-offset-4">
+    <footer><h3>INTELLISYS S.A.<br><br>
+    c 2016 ALL RIGHTS RESERVED<br>
+    SUPPORT: SUPPERT@INTLLSS.COM</h3>
+    </footer>
+    </div>
+           </body>
+           </html>
